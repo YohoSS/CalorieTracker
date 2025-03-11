@@ -30,11 +30,6 @@ function startCamera() {
           startButton.disabled = false; // Re-enable the button
           video.style.display = 'none';
         }
-        if (error) {
-          console.error("Error while scanning: ", error);
-          calorieInfo.innerHTML = 'Failed to detect barcode. Please try again.';
-          calorieInfo.style.display = 'block'; // Show error message
-        }
       }, hints);
 
       video.addEventListener('play', () => {
