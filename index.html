@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login button container -->
+    <div class="login-button-container">
+        <button id="loginButton">Login</button>
+    </div>
+
+    <h1>Scan Barcode and Get Calorie Information</h1>
+    <button id="startButton">Start Scanning</button>
+
+    <br><br>
+
+    <video id="video" autoplay></video>
+    <div class="loader" id="loader"></div>
+    <div id="calorieInfo"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@latest/umd/index.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
